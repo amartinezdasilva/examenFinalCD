@@ -1,8 +1,14 @@
 package busqueda;
 
+import java.util.Scanner;
+
 public class Busqueda {
 
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("introduce el numero de elementos:");
+        in.next();
+        
         int[] numeros = new int[100];
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = i * 5;
