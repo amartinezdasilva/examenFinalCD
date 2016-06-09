@@ -22,7 +22,7 @@ public class Busqueda {
         int indice = ejemplo.busquedaBinaria(numeros, digito, 0, numeros.length - 1);
         System.out.print("El indice del valor "+digito+" es: " + indice);
     }
-//rama grafica
+//merge realizado
     public int busquedaBinaria(int[] listado, int clave, int posInicial, int posFinal) {
         int posMitad = (posFinal + posInicial) / 2;
         if (clave == listado[posMitad]) {
