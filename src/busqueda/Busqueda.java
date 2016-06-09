@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Busqueda {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("introduce el numero de elementos:");
-        in.next();
+        int escribir = sc.nextInt();
         
-        int[] numeros = new int[100];
+        int[] numeros = new int[escribir];
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = i * 5;
         }
