@@ -11,7 +11,7 @@ public class Busqueda {
         int indice = ejemplo.busquedaBinaria(numeros, 450, 0, numeros.length - 1);
         System.out.println("El indice del valor '450' es: " + indice);
     }
-
+//rama consola creada
     public int busquedaBinaria(int[] listado, int clave, int posInicial, int posFinal) {
         int posMitad = (posFinal + posInicial) / 2;
         if (clave == listado[posMitad]) {
