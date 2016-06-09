@@ -23,6 +23,7 @@ public class Busqueda {
         System.out.print("El indice del valor "+digito+" es: " + indice);
     }
 //merge realizado
+    //commit subido
     public int busquedaBinaria(int[] listado, int clave, int posInicial, int posFinal) {
         int posMitad = (posFinal + posInicial) / 2;
         if (clave == listado[posMitad]) {
