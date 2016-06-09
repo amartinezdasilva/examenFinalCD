@@ -1,15 +1,16 @@
 package busqueda;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Busqueda {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("introduce el numero de elementos: ");
-        int escribir = sc.nextInt();
-        System.out.print("introduce digito: ");
-        int digito = sc.nextInt();
+        
+      int escribir = Integer.parseInt(JOptionPane.showInputDialog("introduce el numero de elementos",""));
+       int digito =Integer.parseInt(JOptionPane.showInputDialog("introduce el digito",""));
+       
+       
         
         int[] numeros = new int[escribir];
         for (int i = 0; i < numeros.length; i++) {
@@ -17,7 +18,7 @@ public class Busqueda {
         }
         Busqueda ejemplo = new Busqueda();
         int indice = ejemplo.busquedaBinaria(numeros, digito, 0, numeros.length - 1);
-        System.out.println("El indice del valor "+digito+" es: " + indice);
+        JOptionPane.showMessageDialog(null,"El indice del valor "+digito+" es: " + indice);
     }
 //rama grafica
     public int busquedaBinaria(int[] listado, int clave, int posInicial, int posFinal) {
